@@ -1,0 +1,5 @@
+sentences=input("Write anything...")
+wordlist=sentences.split()
+words=set(wordlist)
+for w in words:
+    print("The frequency of ", w, " is: ", sentences.count(w))
