@@ -1,0 +1,12 @@
+d={}
+for d1 in range(1,7):
+    for d2 in range(1,7):
+        t=(d1,d2)
+        if d1+d2 in d:
+            d[d1+d2]=d[d1+d2]+t
+        else:
+            d[d1+d2]=t
+print (d)
+print ('Sum',"   ",'Pairs')
+for i in d.keys():
+     print (i, d[i])
