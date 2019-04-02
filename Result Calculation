@@ -1,0 +1,17 @@
+Student = { 'UE183001': 'Avish', 'UE183002': 'Bhavya', 'UE183003': 'Tanya' }
+Marks = [('UE183001', 'CS', 94 ), ('UE183002', 'CS', 64 ), ('UE183001', 'RV', 94), ('UE183002', 'CS', 74),
+ ('UE183003', 'CS', 64)]
+l=len(Marks)
+Total={}
+for i in Student.keys():
+    summ=0
+    for Z in range(0,l):
+        if i is Marks[Z][0]:
+            summ+=Marks[Z][2]
+    Total[i]=summ
+print (Total)
+print ('Name'," ",'Total')
+for i in Student.keys():
+    for Z in Total.keys():
+        if i is Z:
+            print (Student[i], Total[Z])
