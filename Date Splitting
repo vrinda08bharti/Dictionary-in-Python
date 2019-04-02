@@ -1,0 +1,9 @@
+g_date=input("Enter date in dd-MONTh-yy format ")
+date=g_date.split('-')
+months={'JAN':'01', 'FEB':'02', 'MAR':'03', 'APR':'04', 'MAY':'05', 'JUN':'06', 'JUL':'07', 'AUG':'08', 'SEP':'09', 'OCT':'10', 'NOV':'11', 'DEC':'12'}
+n = {k: months[k] for k in date if k in months}
+date[1]=n.values()
+print (g_date)
+print (date)
+date_t=tuple(date)
+print (date_t)
